@@ -101,6 +101,12 @@ body{
     height: 25vh;
     width: 25vw;
     border-radius: 50px;
+    transition: 0.5s;
+}
+
+#habilidades:hover{
+    height: 30vh;
+    width: 30vw;
 }
 
 #habilM{
@@ -130,6 +136,7 @@ body{
     height: 25vh;
     width: 25vw;
     border-radius: 50px;
+    transition: 0.5s;
 }
 
 #sites:hover{
@@ -137,14 +144,6 @@ body{
     box-shadow: #14121270 5px 5px;
     height: 30vh;
     width: 30vw;
-    transition: 1s;
-}
-
-#sites::after{
-    height: 25vh;
-    width: 25vw;
-    box-shadow: none;
-    transition: 1s;
 }
 
 #bloco-habil{
