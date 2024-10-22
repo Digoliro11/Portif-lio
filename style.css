@@ -102,11 +102,13 @@ body{
     width: 25vw;
     border-radius: 50px;
     transition: 0.5s;
+    z-index: -1;
 }
 
 #habilidades:hover{
     height: 30vh;
     width: 30vw;
+    z-index: 1;
 }
 
 #habilM{
@@ -140,7 +142,7 @@ body{
 }
 
 #sites:hover{
-    z-index: 99;
+    position: absolute;
     box-shadow: #14121270 5px 5px;
     height: 30vh;
     width: 30vw;
@@ -152,9 +154,4 @@ body{
     width:25vw;
     background-color: rgb(187, 186, 186);
     border-radius: 10px;
-}
-
-#bloco-habil:hover{
-    background-image: url(b4201d8310215781eab5facfb3103dac.jpg);
-    background-size: cover;
 }
