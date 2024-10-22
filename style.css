@@ -123,11 +123,12 @@ body{
     z-index: 0;
     background-color: #1a1a1a;
     width: 100%;
-    height: 110vh;
+    height: 140vh;
     color: white;
     padding-top: 9vh;
     display: grid;
-    grid-template-columns: 10% 1fr 1fr 1fr 10%;
+    grid-template-columns: 20% 1fr 5% 1fr 20%;
+    grid-template-rows: 5vh 30vh 30vh 30vh 30vh 30vh;
     text-align: center;
 }
 
