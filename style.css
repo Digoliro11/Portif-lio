@@ -28,9 +28,7 @@ body{
     border: 0;
     color: white;
 }
-a:focus{
-    color:#1a1a1a;
-}
+
 #verm{
     color: red;
     font-size: xx-large;
@@ -108,7 +106,7 @@ a:focus{
 }
 
 #habilidades:hover{
-    transform: scale(1.1);
+    transform: scale(1.2);
     background-color: #c2c2c2;
 }
 
@@ -172,12 +170,13 @@ a:focus{
     display: flex;
     flex-direction: column;
     border: 1px solid;
+    line-height: 5%;
     align-items: center;
 }
 
 #btnRedes{
-    padding: 5%;
-
+    padding: 4%;
+    border-radius: 20px;
     width: 50%;
     background-color: black;
     color: white;
