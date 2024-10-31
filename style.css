@@ -175,7 +175,7 @@ html {
     border: 1px solid;
     line-height: 5%;
     align-items: center;
-    height: 35vh;
+    height: 30vh;
     justify-content: space-between;
 }
 
@@ -193,19 +193,21 @@ html {
     background-color: #ff3030;
     width: 40%;
     padding: 20px 0;
-    box-shadow: 0 5px 0 #ac2121;
+    box-shadow: 0 10px 0 #ac2121;
     border-radius: 30px;
     font-size: 15px;
     font-weight: bold;
     transition: 0.1s;
-    color: #ac2121;
+    color: #861b1b;
   }
 
 .btnContato:hover{
     background-color: #ea2e2e;
+    color: #6d1c1c;
 }
 
 .btnContato:active{
+    background-color: #f32525;
     box-shadow: none;
-    transform: translateY(5px);
+    transform: translateY(10px);
 }
