@@ -70,7 +70,7 @@ html {
     z-index: 0;
     background-color: #1a1a1a;
     width: 100%;
-    height: 110vh;
+    height: 180vh;
     color: white;
     padding-top: 9vh;
     display: grid;
@@ -98,6 +98,7 @@ html {
     width: 100%;
     background-color: #ececec;
     text-align: center;
+    align-content: center;
 }
 
 #habilidades{
@@ -186,3 +187,25 @@ html {
     color: white;
 }
 
+.btnContato {
+    cursor: pointer;
+    border: none;
+    background-color: #ff3030;
+    width: 40%;
+    padding: 20px 0;
+    box-shadow: 0 5px 0 #ac2121;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.1s;
+    color: #ac2121;
+  }
+
+.btnContato:hover{
+    background-color: #ea2e2e;
+}
+
+.btnContato:active{
+    box-shadow: none;
+    transform: translateY(5px);
+}
