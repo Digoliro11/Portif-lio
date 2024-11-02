@@ -6,6 +6,7 @@
   font-style: normal;
 }
 
+
 body{
     margin: 0;
     background-color: #1a1a1a;
@@ -19,12 +20,27 @@ body.claro {
 }
 
 body.claro #habil{
-    background-color: #eaeaea;
+    background-color: #bebebe;
     color: #1a1a1a;
 }
 
 body.claro #sites{
     background-color: #b3b3b3;
+    color: #1a1a1a;
+}
+
+body.claro #rodape{
+    background-color: #c9c8c8;
+    color: #1a1a1a;
+}
+
+body.claro #card-contato{
+    background-color: #b3b3b3;
+    color: #1a1a1a;
+}
+
+body.claro #header{
+    background-color: #c9c9c9;
     color: #1a1a1a;
 }
 
@@ -59,11 +75,6 @@ html {
     color: white;
 }
 
-#verm{
-    color: red;
-    font-size: xx-large;
-}
-
 #header{
     background-color: rgb(65, 65, 65);
     color: white;
@@ -73,9 +84,11 @@ html {
     padding-top: 2vh;
     padding-bottom: 2vh;
     display: grid;
-    grid-template-columns: repeat(6, 1fr) 5%;
+    grid-template-columns: repeat(7, 1fr) ;
     z-index: 99;
     position: fixed;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .checkbox{
@@ -169,19 +182,25 @@ html {
     grid-template-rows:  10vh 30vh 30vh;
     height: 80vh;
     width: 100%;
+    text-align: center;
     background-color: #dadada;
     align-items: center;
     transition: .2s linear
 }
 
+#texto-habil{
+    color: #ff3030;
+}
+
 #habilidades{
     align-items: center;
-    background-color: #bfbfbf;
+    background-color: #ffffff;
     height: 25vh;
     width: 25vw;
     border-radius: 30px;
     transition: 0.2s;
-    text-align: center;
+    text-align: bottom;
+    padding-top: 1vh;
 }
 
 #habilidades:hover{
@@ -202,11 +221,13 @@ html {
 #projetos{
     width: 100%;
     height: 110vh;
-    padding-top: 9vh;
+    padding-top: 4vh;
     display: grid;
     grid-template-columns: 20% 1fr 5% 1fr 20%;
-    grid-template-rows: 5vh 30vh 30vh 30vh 30vh 30vh;
-    transition: .1s linear
+    grid-template-rows: 10vh 30vh 30vh 30vh 30vh 30vh;
+    transition: .1s linear;
+    text-align: center;
+    align-items: center;
 }
 
 #sites{
@@ -221,7 +242,7 @@ html {
 
 #sites:hover{
     box-shadow: #29232370 5px 5px 5px;
-    transform: scale(1.25);
+    transform: scale(1.15);
     
 }
 
@@ -239,6 +260,7 @@ html {
     background-color: rgb(65, 65, 65);
     display: grid;
     grid-template-columns: 10% 1fr 5% 1fr 10%;
+    grid-template-rows: 100%;
     text-align: center;
     align-items: center;
     transition: .1s linear
@@ -281,3 +303,23 @@ html {
     transform: translateY(6px);
 }
 
+#contato{
+    height: 100%;
+    align-content: center
+}
+
+#card-contato{
+    color: #1a1a1a;
+    background-color: #d9d9d9;
+    border-radius: 25px;
+    height: 80%;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 10% 7% 10% 7% 10% 7% 30% 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 2vh;
+    text-align: left;
+    align-content: space-between;
+}
