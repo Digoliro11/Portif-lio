@@ -8,7 +8,24 @@
 
 body{
     margin: 0;
-    
+    background-color: #1a1a1a;
+    color: #fafafa;
+    transition: .1s linear;
+}
+
+body.claro {
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
+
+body.claro #habil{
+    background-color: #eaeaea;
+    color: #1a1a1a;
+}
+
+body.claro #sites{
+    background-color: #1d1616;
+    color: #1a1a1a;
 }
 
 html {
@@ -53,12 +70,58 @@ html {
     width: 100%;
     font-size: large;
     text-align: center;
-    padding-top: 1vh;
+    padding-top: 2vh;
     padding-bottom: 2vh;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr) 5%;
     z-index: 99;
     position: fixed;
+}
+
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox.claro .ball{
+    background-color: white;
+}
+
+.label{
+    background-color: #272727;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    justify-content: space-between;
+    position: relative;
+    height: 25px;
+    width: 50px;
+
+}
+
+.label .ball{
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    height: 25px;
+    width: 25px;
+
+    transform: translateX(0px);
+    transition: transform 0.1s linear;
+}
+
+.checkbox:checked + .label .ball{
+    transform: translateX(25px);
+}
+
+.fa-moon {
+    color: #f1c40f;
+}
+
+.fa-sun{
+    color: #f39c12;
 }
 
 #headerM{
@@ -77,15 +140,14 @@ html {
 
 #home{
     z-index: 0;
-    background-color: #1a1a1a;
     width: 100%;
     height: 120vh;
-    color: white;
     padding-top: 9vh;
     display: grid;
     grid-template-columns: 10% 1fr 1fr 1fr 10%;
     text-align: center;
     align-items: center;
+    transition: .1s linear
 }
 
 #homeM{
@@ -98,6 +160,7 @@ html {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
+    transition: .1s linear
 }
 
 #habil{
@@ -108,6 +171,7 @@ html {
     width: 100%;
     background-color: #ececec;
     align-items: center;
+    transition: .1s linear
 }
 
 #habilidades{
@@ -136,14 +200,13 @@ html {
 }
 
 #projetos{
-    background-color: #1a1a1a;
     width: 100%;
     height: 110vh;
-    color: white;
     padding-top: 9vh;
     display: grid;
     grid-template-columns: 20% 1fr 5% 1fr 20%;
     grid-template-rows: 5vh 30vh 30vh 30vh 30vh 30vh;
+    transition: .1s linear
 }
 
 #sites{
@@ -178,6 +241,7 @@ html {
     grid-template-columns: 10% 1fr 5% 1fr 10%;
     text-align: center;
     align-items: center;
+    transition: .1s linear
 }
 
 #redes{
@@ -188,21 +252,23 @@ html {
     align-items: center;
     height: 30vh;
     justify-content: space-between;
+    transition: .1s linear
 }
 
 .btnIndice {
+    width: 60%;
     cursor: pointer;
     border: none;
     background-color: #ff3030;
-    width: 50%;
     padding: 10px 0;
-    box-shadow: 0 10px 0 #ac2121;
+    box-shadow: 0 6px 0 #ac2121;
     border-radius: 30px;
     font-size: 15px;
     font-weight: bold;
     transition: 0.1s;
     color: #861b1b;
     margin-bottom: 1%;
+    transition: .1s linear
   }
 
 .btnIndice:hover{
@@ -213,5 +279,6 @@ html {
 .btnIndice:active{
     background-color: #f32525;
     box-shadow: none;
-    transform: translateY(10px);
+    transform: translateY(6px);
 }
+
