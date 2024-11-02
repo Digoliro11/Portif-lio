@@ -1,3 +1,11 @@
+
+.outfit {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
 body{
     margin: 0;
 }
@@ -44,7 +52,7 @@ html {
     width: 100%;
     font-size: large;
     text-align: center;
-    padding-top: 2vh;
+    padding-top: 1vh;
     padding-bottom: 2vh;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -76,6 +84,7 @@ html {
     display: grid;
     grid-template-columns: 10% 1fr 1fr 1fr 10%;
     text-align: center;
+    align-items: center;
 }
 
 #homeM{
@@ -93,22 +102,21 @@ html {
 #habil{
     display: grid;
     grid-template-columns: 10% 1fr 1fr 1fr 10%;
-    grid-template-rows:  20vh 30vh 30vh;
+    grid-template-rows:  10vh 30vh 30vh;
     height: 80vh;
     width: 100%;
     background-color: #ececec;
-    text-align: center;
-    align-content: center;
+    align-items: center;
 }
 
 #habilidades{
+    align-items: center;
     background-color: #dadada;
     height: 25vh;
     width: 25vw;
     border-radius: 30px;
     transition: 0.5s;
     text-align: center;
-    align-items: center;
 }
 
 #habilidades:hover{
@@ -135,7 +143,6 @@ html {
     display: grid;
     grid-template-columns: 20% 1fr 5% 1fr 20%;
     grid-template-rows: 5vh 30vh 30vh 30vh 30vh 30vh;
-    text-align: center;
 }
 
 #sites{
@@ -143,7 +150,9 @@ html {
     height: 25vh;
     width: 25vw;
     border-radius: 10px;
-    transition: 0.5s;
+    align-items: center;
+    text-align: center;
+    transition: 0.2s;
 }
 
 #sites:hover{
@@ -158,6 +167,7 @@ html {
     width:25vw;
     background-color: rgb(187, 186, 186);
     border-radius: 10px;
+    align-items: center;
 }
 
 #rodape{
@@ -177,14 +187,6 @@ html {
     align-items: center;
     height: 30vh;
     justify-content: space-between;
-}
-
-#btnRedes{
-    padding: 5%;
-    border-radius: 35px;
-    width: 50%;
-    background-color: black;
-    color: white;
 }
 
 .btnIndice {
