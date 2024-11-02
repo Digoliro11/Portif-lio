@@ -353,7 +353,7 @@ html {
 
 .btnContato{
     border: 0;
-    border-radius: 15px;
+    border-radius: 25px;
     background-color: #272727;
     box-shadow: #1a1a1a 0px 5px 0;
     color: #ffffff;
@@ -361,7 +361,8 @@ html {
     transition: .1s;
     padding: 5px;
     width: 50%;
-    height: 20%;
+    height: 15%;
+    align-content: center;
 }
 
 .btnContato:hover{
