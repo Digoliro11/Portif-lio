@@ -106,12 +106,11 @@ html {
     cursor: pointer;
     display: flex;
     align-items: center;
-    padding: 5px;
+    padding: 3px;
     justify-content: space-between;
     position: relative;
     height: 25px;
     width: 50px;
-
 }
 
 .label .ball{
@@ -287,14 +286,14 @@ html {
     font-size: 15px;
     font-weight: bold;
     transition: 0.1s;
-    color: #861b1b;
+    color: #ffffff;
     margin-bottom: 1%;
     transition: .1s linear
   }
 
 .btnIndice:hover{
     background-color: #ea2e2e;
-    color: #6d1c1c;
+    color: #efefef;
 }
 
 .btnIndice:active{
@@ -322,4 +321,54 @@ html {
     padding-bottom: 2vh;
     text-align: left;
     align-content: space-between;
+}
+
+#btnEnviar{
+    width: 60%;
+    cursor: pointer;
+    border: none;
+    background-color: #ff3030;
+    padding: 10px 0;
+    box-shadow: 0 6px 0 #ac2121;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.1s;
+    color: #ffffff;
+    margin-bottom: 1%;
+    transition: .1s linear;
+    text-align: center;
+}
+
+#btnEnviar:hover{
+    background-color: #ea2e2e;
+    color: #efefef;
+}
+
+#btnEnviar:active{
+    background-color: #f32525;
+    box-shadow: none;
+    transform: translateY(6px);
+}
+
+.btnContato{
+    border: 0;
+    border-radius: 15px;
+    background-color: #272727;
+    box-shadow: #1a1a1a 0px 5px 0;
+    color: #ffffff;
+    text-align: center;
+    transition: .1s;
+    padding: 5px;
+    width: 50%;
+    height: 20%;
+}
+
+.btnContato:hover{
+    background-color: #292929;
+}
+
+.btnContato:active{
+    box-shadow: none;
+    transform: translateY(5px);
 }
