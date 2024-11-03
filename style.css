@@ -156,10 +156,11 @@ html {
     height: 120vh;
     padding-top: 9vh;
     display: grid;
-    grid-template-columns: 10% 1fr 1fr 1fr 10%;
+    grid-template-columns: 10% 1fr 1fr 10%;
     text-align: center;
     align-items: center;
-    transition: .1s linear
+    transition: .1s linear;
+    text-align: justify;
 }
 
 #homeM{
@@ -226,7 +227,6 @@ html {
     grid-template-rows: 10vh 30vh 30vh 30vh 30vh 30vh;
     transition: .1s linear;
     text-align: center;
-    align-items: center;
 }
 
 #sites{
@@ -237,6 +237,7 @@ html {
     align-items: center;
     text-align: center;
     transition: 0.2s;
+    background-size: cover;
 }
 
 #sites:hover{
@@ -372,4 +373,23 @@ html {
 .btnContato:active{
     box-shadow: none;
     transform: translateY(5px);
+}
+
+#topoBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #c83333;
+    color: #fafafa;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    font-size: 16px;
+    transition: 0.1s;
+}
+
+#topoBtn:hover {
+    background-color: #a72626;
 }
